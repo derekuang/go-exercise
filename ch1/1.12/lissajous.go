@@ -34,7 +34,7 @@ func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
 }
 
 // !+handler

@@ -48,7 +48,7 @@ func main() {
 		}
 		http.HandleFunc("/", handler)
 		//!-http
-		log.Fatal(http.ListenAndServe("localhost:8000", nil))
+		log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
 		return
 	}
 	//!+main
